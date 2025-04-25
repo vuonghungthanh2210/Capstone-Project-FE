@@ -11,10 +11,10 @@ const Dashboard = () => {
         {/* Thống kê */}
         <div className="row mt-3">
           {[
-            { color: 'warning', text: 'Đơn hàng mới', count: 0 },
-            { color: 'danger', text: 'Phim mới', count: 0 },
+            { color: 'warning', text: 'Phim mới', count: 0 },
+            { color: 'danger', text: 'Top phim có người xem nhiều', count: 0 },
             { color: 'primary', text: 'User mới/Tổng số user', count: '0/27' },
-            { color: 'success', text: 'Bài viết mới/Tổng số bài', count: '0/84' },
+            { color: 'success', text: 'Số phiên truy cập', count: '0' },
           ].map((item, index) => (
             <div className="col-md-3" key={index}>
               <div className={`card bg-${item.color} text-white p-3`}>
@@ -32,12 +32,12 @@ const Dashboard = () => {
         <div className="row mt-4">
           {[
             {
-              title: 'Đơn hàng mới nhất',
-              headers: ['Order ID', 'Phim', 'Trạng thái', 'Giá tiền'],
-              data: [['#001', 'Avatar', 'Hoàn thành', '$15']],
+              title: 'Phim mới',
+              headers: ['Order ID', 'Tên phim', 'Thể loại', 'Năm phát hành'],
+              data: [['#001', 'Black Mirror (Season 4)', 'Action', '2020']],
             },
             {
-              title: 'User mới nhất',
+              title: 'User mới',
               headers: ['Họ tên', 'Email', 'Số điện thoại'],
               data: [['Nguyễn Văn A', 'nguyenvana@gmail.com', '0123456789']],
             },

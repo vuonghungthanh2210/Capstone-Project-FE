@@ -38,19 +38,6 @@ function UpdateUser() {
   const [message, setMessage] = useState({ type: '', content: '' });
 
   // 4. When userData arrives, populate form
-  // useEffect(() => {
-  //   if (userData) {
-  //     setFormData({
-  //       username: userData.username || '',
-  //       email: userData.email || '',
-  //       password: '',
-  //       confirmPassword: '',
-  //       phone: userData.phone || '',
-  //       role: userData.role ?? 0,
-  //     });
-  //     setSelectedImage(userData.avatar || '/images/default-avatar.jpg');
-  //   }
-  // }, [userData]);
   useEffect(() => {
     if (userData && userData.user) {
       setFormData({
